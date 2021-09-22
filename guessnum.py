@@ -4,7 +4,11 @@
 #猜錯:印出比答案大小提示
 
 import random
-r = random.randint(1,100)
+start = input('請輸入隨機數開始值: ')
+end = input('請輸入隨機數結束值: ')
+start = int(start)
+end = int(end)
+r = random.randint(start,end)
 count = 0
 while True:
     count += 1 #count = count + 1
